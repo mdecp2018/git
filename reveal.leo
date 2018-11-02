@@ -21,47 +21,56 @@
 <v t="40323230.20171027160523.1"><vh>Title</vh>
 <v t="40323230.20171117122904.1"><vh>Cover</vh></v>
 </v>
-<v t="leo.20181025202338.1" a="E"><vh>help</vh>
+<v t="leo.20181025202338.1"><vh>help</vh>
 <v t="leo.20181025202338.2"><vh>help</vh></v>
-<v t="leo.20181025213132.1"><vh>###</vh></v>
+<v t="leo.20181025213132.1"><vh>[options]</vh></v>
 </v>
-<v t="leo.20181025213442.1" a="E"><vh>clone</vh>
-<v t="leo.20181025213442.2"><vh>Cover</vh></v>
+<v t="leo.20181025213442.1"><vh>clone</vh>
+<v t="leo.20181025213442.2"><vh>clone</vh></v>
 </v>
-<v t="leo.20181025213444.1" a="E"><vh>add</vh>
-<v t="leo.20181025213444.2"><vh>Cover</vh></v>
+<v t="leo.20181025213444.1"><vh>add</vh>
+<v t="leo.20181025213444.2"><vh>add .</vh></v>
+<v t="leo.20181102130510.1"><vh>[folder name]</vh></v>
 </v>
 <v t="leo.20181025213445.1"><vh>commit</vh>
-<v t="leo.20181025213445.2"><vh>Cover</vh></v>
+<v t="leo.20181025213445.2"><vh>commit</vh></v>
+<v t="leo.20181102132534.1"><vh>-m</vh></v>
 </v>
 <v t="leo.20181025213447.1"><vh>pull</vh>
-<v t="leo.20181025213447.2"><vh>Cover</vh></v>
+<v t="leo.20181025213447.2"><vh>pull</vh></v>
 </v>
-<v t="leo.20181025213448.1" a="E"><vh>push</vh>
-<v t="leo.20181025213448.2"><vh>Cover</vh></v>
+<v t="leo.20181025213448.1"><vh>push</vh>
+<v t="leo.20181025213448.2"><vh>push</vh></v>
+<v t="leo.20181102134756.1"><vh>-f</vh></v>
+<v t="leo.20181102134758.1"><vh>origin</vh></v>
+<v t="leo.20181102134800.1"><vh>Cover</vh></v>
 </v>
 <v t="leo.20181025213433.1"><vh>init</vh>
-<v t="leo.20181025213433.2"><vh>Cover</vh></v>
+<v t="leo.20181025213433.2"><vh>init</vh></v>
+<v t="leo.20181102145322.1"><vh>folder name</vh></v>
 </v>
 <v t="leo.20181025214319.1" a="E"><vh>tag</vh>
 <v t="leo.20181025214319.2"><vh>貼標籤</vh></v>
+<v t="leo.20181102150749.1"><vh>貼標籤</vh></v>
+<v t="leo.20181102150751.1"><vh>貼標籤</vh></v>
 </v>
 <v t="leo.20181025213435.1" a="E"><vh>branch</vh>
 <v t="leo.20181025213435.2"><vh>Cover</vh></v>
+<v t="leo.20181102160038.1"><vh>Cover</vh></v>
+<v t="leo.20181102160040.1"><vh>Cover</vh></v>
 </v>
 <v t="leo.20181025214313.1"><vh>checkout</vh>
-<v t="leo.20181025214313.2"><vh>Cover</vh></v>
+<v t="leo.20181025214313.2"><vh>checkout</vh></v>
 </v>
 <v t="leo.20181025214314.1"><vh>reset</vh>
-<v t="leo.20181025214314.2"><vh>Cover</vh></v>
+<v t="leo.20181025214314.2"><vh>reset</vh></v>
 </v>
 <v t="leo.20181025214316.1"><vh>merge</vh>
 <v t="leo.20181025214316.2"><vh>合併</vh></v>
 </v>
-<v t="leo.20181025214317.1"><vh>log</vh>
+<v t="leo.20181025214317.1" a="E"><vh>log</vh>
 <v t="leo.20181025214317.2"><vh>Cover</vh></v>
 <v t="leo.20181025214508.1"><vh>Cover</vh></v>
-<v t="leo.20181025214510.1"><vh>Cover</vh></v>
 </v>
 </v>
 </v>
@@ -247,6 +256,10 @@ git 基本語法使用
 
 
 
+            40723136
+
+
+
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181025202338.1">&lt;section&gt;
@@ -261,7 +274,7 @@ help
 git help 
 ```
 
-help 使用這個功能的時候能夠叫出git的內部說明
+help 使用這個功能的時候能夠叫出git的內部說明(簡略的)
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -285,9 +298,11 @@ git help [options]
 git
 ---
 
-git 基本語法使用
+```bash
+git init
+```
 
-
+在當前的位子建立一個.git倉儲
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -302,8 +317,6 @@ git
 
 ```bash
 git branch -a [tag name] [hash code]
-git branch -d [tag name]
-git branch -f [tag name] [hash code]
 ```
 
 git 基本語法使用
@@ -327,16 +340,21 @@ clone
 
 ```bash
 git clone [URL] [folder name]
+```
+
+可以在clone的後面輸入網址就能將遠端的網頁作複製
+後面的資料夾名稱，則是代表目標位子以 [設定] 的名稱建立資料夾
+若沒做設定則會用元倉儲的名稱做建立
+
+
+&lt;!--
 #URL網址 
 #folder name資料夾名稱
-
-```
-&lt;!--
  在bash裡加#會直接當作註解(轉成綠字)
 如果是在外面則是用markdown的html語法
---&gt;
 
 可以從任何的倉儲網站上下載一份資料
+--&gt;
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -345,12 +363,14 @@ git clone [URL] [folder name]
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213444.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+add
 ---
 
-git 基本語法使用
+```bash
+git add .
+```
 
-
+可以在{整個}倉儲中找出差異，並{暫存}以修改的檔案
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -362,9 +382,11 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
+```bash
+git commit
+```
 
-
+會開啟一個git的編譯模式，進入之後就能在裡面做要 {提交} 的封裝
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -376,8 +398,10 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
-
+```bash
+git pull
+```
+將現有 {近端} 跟 {遠端} 做比對，若有所差異則會嘗試自動合併
 
 
 &lt;/textarea&gt;&lt;/section&gt;
@@ -390,7 +414,11 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
+```bash
+git push 
+```
+
+把近端現有的東西做出提交至遠端的版本
 
 &lt;!--
 
@@ -409,9 +437,11 @@ git push origin :xxx(刪除遠端branch)
 git
 ---
 
-git 基本語法使用
+```bash
+git checkout [code]/[branch]
+```
 
-
+將標頭跳轉到指定的封裝上或是選定的分支上
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -423,9 +453,11 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
+```bash
+git reset [Code]
+```
 
-
+回朔到某一個時間點，並且把回過程經過的封裝一同刪除
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -437,8 +469,10 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
-
+```bash
+git merge [branch]
+```
+把選定的倉儲裡的東西合併到當前的倉儲裡
 
 
 &lt;/textarea&gt;&lt;/section&gt;
@@ -451,9 +485,11 @@ git 基本語法使用
 git
 ---
 
-git 基本語法使用
+```bash
+git log
+```
 
-
+顯示倉儲更改歷程
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -467,10 +503,8 @@ git
 
 ```bash
 git tag -a [tag name] -m [commend] [hash code]
-git tag -d [tag name]
-git tag -f [tag name] -m [commend] [hash code]
 ```
--a直接新增一個tag分支
+-a直接新增一個tag分支快速檢索標籤
 
 &lt;!--
 git 基本語法使用
@@ -487,19 +521,184 @@ git 基本語法使用
 git
 ---
 
+```bash
+git log --graph --oneline
+```
+
+顯示倉儲歷程(以線性的方式表示)
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102130510.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+add
+---
+
+```bash
+git add [folder name]
+```
+
+可以在倉儲{指定資料夾}中找出差異，並做暫存
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102132534.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git commit -m "[depiction]"
+```
+
+如果是在commit後加了-m這個參數，就能簡化到編譯器裡的操作 讓電腦自動的作 {封裝}
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102134756.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git push -f origin [folder name]
+```
+
+把特定檔案的commit做出提交，並且覆蓋過遠端的原有資料
+
+&lt;!--
+
+git push -f origin xxx (蓋過)
+git push origin xxx(推送新的commit)(第一次建立的話要加一個origin{原點})
+git push origin :xxx(刪除遠端branch)
+--&gt;
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102134758.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git push origin [folder name]
+```
+
+把手上新建立的文件或倉儲做出提交
+
+&lt;!--
+
+git push -f origin xxx (蓋過)
+git push origin xxx(推送新的commit)(第一次建立的話要加一個origin{原點})
+git push origin :xxx(刪除遠端branch)
+--&gt;
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102134800.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git push origin :[folder name]
+```
+
+把近端的刪除做出提交，刪除遠端的某個特定檔案
+
+&lt;!--
+
+git push -f origin xxx (蓋過)
+git push origin xxx(推送新的commit)(第一次建立的話要加一個origin{原點})
+git push origin :xxx(刪除遠端branch)
+--&gt;
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102145322.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git init [folder name]
+```
+
+在當前的位子建立一個指定檔名的檔案
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102150749.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+```bash
+git tag -d [tag name]
+```
+-d直接新增一個tag分支
+
+&lt;!--
 git 基本語法使用
+#配合checkout 可以做到快速檢索到某一版本
+#commit 如果沒有版本碼會直接繼承上一版本的commit(hash)
+#git tag -a v1.0 -m "v1.0" hash(可不打)
+--&gt;
 
 
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
-<t tx="leo.20181025214510.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+<t tx="leo.20181102150751.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
 git
 ---
 
+```bash
+git tag -f [tag name] -m [commend] [hash code]
+```
+-f直接新增一個tag分支
+
+&lt;!--
+git 基本語法使用
+#配合checkout 可以做到快速檢索到某一版本
+#commit 如果沒有版本碼會直接繼承上一版本的commit(hash)
+#git tag -a v1.0 -m "v1.0" hash(可不打)
+--&gt;
+
+
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102160038.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+
+```bash
+git branch -d [tag name]
+```
+
 git 基本語法使用
 
+&lt;!--
+branch的語法會和tag一樣
+a
+d
+f
+--&gt;
 
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181102160040.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+git
+---
+
+
+```bash
+git branch -f [tag name] [hash code]
+```
+
+git 基本語法使用
+
+&lt;!--
+branch的語法會和tag一樣
+a
+d
+f
+--&gt;
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
