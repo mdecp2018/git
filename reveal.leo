@@ -21,31 +21,31 @@
 <v t="40323230.20171027160523.1"><vh>Title</vh>
 <v t="40323230.20171117122904.1"><vh>Cover</vh></v>
 </v>
-<v t="leo.20181025202338.1"><vh>help</vh>
+<v t="leo.20181025202338.1" a="E"><vh>help</vh>
 <v t="leo.20181025202338.2"><vh>help</vh></v>
 <v t="leo.20181025213132.1"><vh>[options]</vh></v>
 </v>
-<v t="leo.20181025213442.1"><vh>clone</vh>
+<v t="leo.20181025213442.1" a="E"><vh>clone</vh>
 <v t="leo.20181025213442.2"><vh>clone</vh></v>
 </v>
-<v t="leo.20181025213444.1"><vh>add</vh>
+<v t="leo.20181025213444.1" a="E"><vh>add</vh>
 <v t="leo.20181025213444.2"><vh>add .</vh></v>
 <v t="leo.20181102130510.1"><vh>[folder name]</vh></v>
 </v>
-<v t="leo.20181025213445.1"><vh>commit</vh>
+<v t="leo.20181025213445.1" a="E"><vh>commit</vh>
 <v t="leo.20181025213445.2"><vh>commit</vh></v>
 <v t="leo.20181102132534.1"><vh>-m</vh></v>
 </v>
-<v t="leo.20181025213447.1"><vh>pull</vh>
+<v t="leo.20181025213447.1" a="E"><vh>pull</vh>
 <v t="leo.20181025213447.2"><vh>pull</vh></v>
 </v>
-<v t="leo.20181025213448.1"><vh>push</vh>
+<v t="leo.20181025213448.1" a="E"><vh>push</vh>
 <v t="leo.20181025213448.2"><vh>push</vh></v>
 <v t="leo.20181102134756.1"><vh>-f</vh></v>
 <v t="leo.20181102134758.1"><vh>origin</vh></v>
 <v t="leo.20181102134800.1"><vh>Cover</vh></v>
 </v>
-<v t="leo.20181025213433.1"><vh>init</vh>
+<v t="leo.20181025213433.1" a="E"><vh>init</vh>
 <v t="leo.20181025213433.2"><vh>init</vh></v>
 <v t="leo.20181102145322.1"><vh>folder name</vh></v>
 </v>
@@ -59,13 +59,13 @@
 <v t="leo.20181102160038.1"><vh>Cover</vh></v>
 <v t="leo.20181102160040.1"><vh>Cover</vh></v>
 </v>
-<v t="leo.20181025214313.1"><vh>checkout</vh>
+<v t="leo.20181025214313.1" a="E"><vh>checkout</vh>
 <v t="leo.20181025214313.2"><vh>checkout</vh></v>
 </v>
-<v t="leo.20181025214314.1"><vh>reset</vh>
+<v t="leo.20181025214314.1" a="E"><vh>reset</vh>
 <v t="leo.20181025214314.2"><vh>reset</vh></v>
 </v>
-<v t="leo.20181025214316.1"><vh>merge</vh>
+<v t="leo.20181025214316.1" a="E"><vh>merge</vh>
 <v t="leo.20181025214316.2"><vh>合併</vh></v>
 </v>
 <v t="leo.20181025214317.1" a="E"><vh>log</vh>
@@ -295,7 +295,7 @@ git help [options]
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213433.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+init
 ---
 
 ```bash
@@ -311,7 +311,7 @@ git init
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213435.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+branch
 ---
 
 
@@ -379,7 +379,7 @@ git add .
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213445.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+commit
 ---
 
 ```bash
@@ -395,7 +395,7 @@ git commit
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213447.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+pull
 ---
 
 ```bash
@@ -411,7 +411,7 @@ git pull
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025213448.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+push
 ---
 
 ```bash
@@ -434,7 +434,7 @@ git push origin :xxx(刪除遠端branch)
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025214313.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+checkout
 ---
 
 ```bash
@@ -450,7 +450,7 @@ git checkout [code]/[branch]
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025214314.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+reset
 ---
 
 ```bash
@@ -466,7 +466,7 @@ git reset [Code]
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025214316.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+merge
 ---
 
 ```bash
@@ -482,7 +482,7 @@ git merge [branch]
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025214317.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+log
 ---
 
 ```bash
@@ -498,7 +498,7 @@ git log
 &lt;/section&gt;
 </t>
 <t tx="leo.20181025214319.2">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+tag
 ---
 
 ```bash
@@ -518,7 +518,7 @@ git 基本語法使用
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181025214508.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+log
 ---
 
 ```bash
@@ -542,7 +542,7 @@ git add [folder name]
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102132534.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+commit
 ---
 
 ```bash
@@ -554,7 +554,7 @@ git commit -m "[depiction]"
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102134756.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+push
 ---
 
 ```bash
@@ -573,7 +573,7 @@ git push origin :xxx(刪除遠端branch)
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102134758.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+push
 ---
 
 ```bash
@@ -592,7 +592,7 @@ git push origin :xxx(刪除遠端branch)
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102134800.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+push
 ---
 
 ```bash
@@ -611,7 +611,7 @@ git push origin :xxx(刪除遠端branch)
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102145322.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+init
 ---
 
 ```bash
@@ -623,7 +623,7 @@ git init [folder name]
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102150749.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+tag
 ---
 
 ```bash
@@ -643,7 +643,7 @@ git 基本語法使用
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102150751.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+tag
 ---
 
 ```bash
@@ -663,7 +663,7 @@ git 基本語法使用
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102160038.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+branch
 ---
 
 
@@ -683,7 +683,7 @@ f
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
 <t tx="leo.20181102160040.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
-git
+branch
 ---
 
 
