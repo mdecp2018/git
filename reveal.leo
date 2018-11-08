@@ -230,7 +230,7 @@ Author: kmol
 &lt;script src="js/reveal.js"&gt;&lt;/script&gt;
 &lt;script&gt;
     Reveal.initialize({
-        history: true,
+        history: false,
         transition: 'linear',
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
