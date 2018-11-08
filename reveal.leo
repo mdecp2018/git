@@ -35,6 +35,7 @@
 <v t="leo.20181025213445.1" a="E"><vh>commit</vh>
 <v t="leo.20181025213445.2"><vh>commit</vh></v>
 <v t="leo.20181102132534.1"><vh>-m</vh></v>
+<v t="leo.20181108214715.1"><vh>--amend</vh></v>
 </v>
 <v t="leo.20181025213447.1" a="E"><vh>pull</vh>
 <v t="leo.20181025213447.2"><vh>pull</vh></v>
@@ -386,7 +387,10 @@ commit
 git commit
 ```
 
-會開啟一個git的編譯模式，進入之後就能在裡面做要 {提交} 的封裝
+會開啟一個git的編輯模式，進入之後就能在裡面做要 {提交} 的封裝
+&lt;!--
+要取消編輯的時候要加":"和後面加WQ不然會出不來
+--&gt;
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>
@@ -699,6 +703,19 @@ a
 d
 f
 --&gt;
+
+&lt;/textarea&gt;&lt;/section&gt;
+</t>
+<t tx="leo.20181108214715.1">&lt;section data-markdown&gt;&lt;textarea data-template&gt;
+commit
+---
+
+```bash
+git commit --amend
+```
+
+如果是在commit後加了-amend這個參數，就能更改上個commit 
+
 
 &lt;/textarea&gt;&lt;/section&gt;
 </t>

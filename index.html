@@ -130,7 +130,10 @@ commit
 git commit
 ```
 
-會開啟一個git的編譯模式，進入之後就能在裡面做要 {提交} 的封裝
+會開啟一個git的編輯模式，進入之後就能在裡面做要 {提交} 的封裝
+<!--
+要取消編輯的時候要加":"和後面加WQ不然會出不來
+-->
 
 </textarea></section>
 <section data-markdown><textarea data-template>
@@ -142,6 +145,18 @@ git commit -m "[depiction]"
 ```
 
 如果是在commit後加了-m這個參數，就能簡化到編譯器裡的操作 讓電腦自動的作 {封裝}
+
+</textarea></section>
+<section data-markdown><textarea data-template>
+commit
+---
+
+```bash
+git commit --amend
+```
+
+如果是在commit後加了-amend這個參數，就能更改上個commit 
+
 
 </textarea></section>
 </section>
